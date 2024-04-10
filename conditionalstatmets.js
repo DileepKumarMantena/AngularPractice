@@ -85,11 +85,17 @@ for (let i = 1; i <= 5; i++) {
     }
   }
   
-year = 2024
+year = 1900
 
 if (year % 4 == 0){
     console.log( "is a leap year.");
 }
 else{
    console.log( "is not a leap year.");
+}
+
+number=2
+
+for (let i = 1; i <= 5; i++){
+    console.log(i*2)
 }
