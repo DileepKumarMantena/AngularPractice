@@ -1,14 +1,14 @@
-function greet(name) {
-  console.log(`Hello, ${name}!`);
-}
+// function greet(name) {
+//   console.log(`Hello, ${name}!`);
+// }
 
-greet("John");
+// greet("John");
 
-const greet = (name) => {
-  console.log(`Hello, ${name}!`);
-};
+// const greet = (name) => {
+//   console.log(`Hello, ${name}!`);
+// };
 
-greet("Deepak")
+// greet("Deepak")
 
 
 function evenOrOdd(number) {
