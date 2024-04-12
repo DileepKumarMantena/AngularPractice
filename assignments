@@ -5,5 +5,59 @@
 10/04/2024
 4.write a program to print the multiplication table of the given number
 5.Write a function to determine even or number is given 
-11/4/2024
+12/4/2024
 6.To find out what are the max and min numbers in the let numbers = [1,2,3,4,5,6,7,4,8,9]
+7.a={
+    "library": {
+      "name": "City Central Library",
+      "location": "Downtown",
+      "books": [
+        {
+          "title": "The Great Gatsby",
+          "author": {
+            "first_name": "F. Scott",
+            "last_name": "Fitzgerald"
+          },
+          "publication_year": 1925,
+          "genres": ["Novel", "Historical"],
+          "reviews": [
+            {
+              "reviewer": "Alice",
+              "rating": 5,
+              "comment": "A masterpiece of literature."
+            },
+            {
+              "reviewer": "Bob",
+              "rating": 4,
+              "comment": "Great writing and storytelling."
+            }
+          ]
+        },
+        {
+          "title": "To Kill a Mockingbird",
+          "author": {
+            "first_name": "Harper",
+            "last_name": "Lee"
+          },
+          "publication_year": 1960,
+          "genres": ["Novel", "Drama"],
+          "reviews": [
+            {
+              "reviewer": "Carol",
+              "rating": 5,
+              "comment": "A must-read for everyone."
+            },
+            {
+              "reviewer": "Dave",
+              "rating": 4,
+              "comment": "Very impactful and thought-provoking."
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
+  8.a="7+5" o/p -12
+  9.Can you print all the asci code of a-z using console.log(str.charCodeAt(0));
+  10. Write a program to check whetre the given string is a palindrome or not
