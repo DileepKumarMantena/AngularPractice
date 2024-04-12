@@ -78,21 +78,29 @@
 //     return number * number;
 // });
 
-let a = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-  ];
+// let a = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+//   ];
 
-for (let i = 0; i < a.length; i++) {
-    for (let j = 0; j < a[i].length; j++) {
-      let number=a[i][j];
-     if (number%2==0){
-        console.log("even")
-     } 
-     else {
-        console.log('Odd')
-     }
-    }
-  }
+// for (let i = 0; i < a.length; i++) {
+//     for (let j = 0; j < a[i].length; j++) {
+//       let number=a[i][j];
+//      if (number%2==0){
+//         console.log("even")
+//      } 
+//      else {
+//         console.log('Odd')
+//      }
+//     }
+//   }
   
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 4, 8, 9];
+
+let max = Math.max(...numbers);
+let min = Math.min(...numbers);
+
+console.log("Maximum number:", max);
+console.log("Minimum number:", min);
