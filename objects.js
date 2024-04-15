@@ -45,14 +45,95 @@
 // console.log(Object.values(obj))
 
 
-a=[1,2,3]
-let obj = { a: 1, b: 2 };
-Object.freeze(obj);
-obj.b = 3; 
-console.log(obj.b);
+// a=[1,2,3]
+// let obj = { a: 1, b: 2 };
+// Object.freeze(obj);
+// obj.b = 3; 
+// console.log(obj.b);
 
-b={
-  "name":['Deepak',"JavaScript"]
+// b={
+//   "name":['Deepak',"JavaScript"]
+// }
+
+for (let i = 97; i <= 122; i++) {
+  console.log(String.fromCharCode(i) + ": " + i);
 }
 
+let numbers = [1, 2, 3, 4, 5, 6, 7, 4, 8, 9];
 
+let max = numbers[0];
+let min = numbers[0];
+
+for (let number of numbers) {
+    if (number > max) {
+        max = number;
+    }
+    if (number < min) {
+        min = number;
+    }
+};
+
+console.log("Maximum number:", max);
+console.log("Minimum number:", min);
+
+
+const  obj={
+    "library": {
+      "name": "City Central Library",
+      "location": "Downtown",
+      "books": [
+        {
+          "title": "The Great Gatsby",
+          "author": {
+            "first_name": "F. Scott",
+            "last_name": "Fitzgerald"
+          },
+          "publication_year": 1925,
+          "genres": ["Novel", "Historical"],
+          "reviews": [
+            {
+              "reviewer": "Alice",
+              "rating": 5,
+              "comment": "A masterpiece of literature."
+            },
+            {
+              "reviewer": "Bob",
+              "rating": 4,
+              "comment": "Great writing and storytelling."
+            }
+          ]
+        },
+        {
+          "title": "To Kill a Mockingbird",
+          "author": {
+            "first_name": "Harper",
+            "last_name": "Lee"
+          },
+          "publication_year": 1960,
+          "genres": ["Novel", "Drama"],
+          "reviews": [
+            {
+              "reviewer": "Carol",
+              "rating": 5,
+              "comment": "A must-read for everyone."
+            },
+            {
+              "reviewer": "Dave",
+              "rating": 4,
+              "comment": "Very impactful and thought-provoking."
+            }
+          ]
+        }
+      ]
+    }
+  }
+
+// Object values
+const values = Object.values(obj);
+console.log("Object values:");
+console.log(values);
+
+// Object keys
+const keys = Object.keys(obj);
+console.log("Object keys:");
+console.log(keys);
