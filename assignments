@@ -61,6 +61,5 @@
   8.a="7+5" o/p -12
   9.Can you print all the asci code of a-z using console.log(str.charCodeAt(0));
   10. Write a program to check whetre the given string is a palindrome or not
-
-  Example:madam -->madam 
-  
+  SampleInput: Madam ,MadAm
+  11. Write a program to find out the given number is amstrong or not
