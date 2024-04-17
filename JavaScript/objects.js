@@ -147,3 +147,18 @@ console.log(`The ASCII value of '${character}' is: ${asciiValue}`);
 // const keys = Object.keys(obj);
 // console.log("Object keys:");
 // console.log(keys);
+
+
+function palindrome(str) {
+    let lowerCaseStr = str.toLowerCase();
+    let rev = lowerCaseStr.split("").reverse().join("");
+    if (rev == lowerCaseStr) {
+        return "It is a palindrome"
+    }
+    else{
+        return "It is not a FF"
+    }
+}
+
+let str ="maDam"
+console.log(palindrome(str))
