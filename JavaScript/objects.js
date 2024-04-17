@@ -156,7 +156,7 @@ function palindrome(str) {
         return "It is a palindrome"
     }
     else{
-        return "It is not a FF"
+        return "It is not a Palindrome"
     }
 }
 
