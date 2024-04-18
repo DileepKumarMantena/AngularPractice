@@ -60,13 +60,13 @@
 // }
 
 // Prompt the user to input a character
-const character = prompt("Enter a character:");
+// const character = prompt("Enter a character:");
 
-// Get the ASCII value of the input character using charCodeAt()
-const asciiValue = character.charCodeAt(0);
+// // Get the ASCII value of the input character using charCodeAt()
+// const asciiValue = character.charCodeAt(0);
 
-// Print the ASCII value
-console.log(`The ASCII value of '${character}' is: ${asciiValue}`);
+// // Print the ASCII value
+// console.log(`The ASCII value of '${character}' is: ${asciiValue}`);
 
 
 // let numbers = [1, 2, 3, 4, 5, 6, 7, 4, 8, 9];
@@ -162,3 +162,44 @@ function palindrome(str) {
 
 let str ="maDam"
 console.log(palindrome(str))
+
+function performOperations(a, b) {
+    var resultAdd;
+    var resultMult;
+    var resultSum;
+
+    if (typeof a === 'number' && typeof b === 'number') {
+        resultAdd = a + b;
+        resultMult = a * b;
+        resultSum = a - b;
+        console.log("Addition result:", resultAdd);
+        console.log("Multiplication result:", resultMult);
+        console.log("subtraction  result:", resultSum);
+    } else {
+        console.log("Both a and b should be numbers for operations.");
+    }
+}
+
+
+var a = 10;
+var b = 20;
+performOperations(a, b);
+
+
+
+fetch('https://randomuser.me/api')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        const firstName = data.results[0].name.first;
+        const lastName = data.results[0].name.last;
+        console.log('First Name:', firstName);
+        console.log('Last Name:', lastName);
+    })
+    .catch(error => {
+        console.error('Error fetching data from API:', error);
+    });
