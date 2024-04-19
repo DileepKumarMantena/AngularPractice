@@ -203,3 +203,12 @@ fetch('https://randomuser.me/api')
     .catch(error => {
         console.error('Error fetching data from API:', error);
     });
+
+a={
+
+    'name':'5555',
+    'age':25,
+    'city':'vizag'
+}
+
+console.log(a['name'])
