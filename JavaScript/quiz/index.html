@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaScript Quiz</title>
+</head>
+<body>
+  <div id="quiz">
+    <h2>JavaScript Quiz</h2>
+    <form id="quizForm">
+      <div id="question1" style="display: block;">
+        <p>1. What is the result of the following expression: typeof([])?</p>
+        <input type="radio" name="q1Answer" value="a"> a) "object"<br>
+        <input type="radio" name="q1Answer" value="b"> b) "array"<br>
+        <input type="radio" name="q1Answer" value="c"> c) "undefined"<br>
+        <input type="radio" name="q1Answer" value="d"> d) "string"<br>
+        <button type="button" onclick="showNextQuestion(2)">Submit</button>
+      </div>
+      <div id="question2" style="display: none;">
+        <p>2. What does the === operator do in JavaScript?</p>
+        <input type="radio" name="q2Answer" value="a"> a) Compares value and type<br>
+        <input type="radio" name="q2Answer" value="b"> b) Compares value only<br>
+        <input type="radio" name="q2Answer" value="c"> c) Compares type only<br>
+        <input type="radio" name="q2Answer" value="d"> d) Assigns a value<br>
+        <button type="button" onclick="showNextQuestion(3)">Submit</button>
+      </div>
+      <div id="question3" style="display: none;">
+        <p>3. How can you add a new element at the end of an array in JavaScript?</p>
+        <input type="radio" name="q3Answer" value="a"> a) array.insertLast(element)<br>
+        <input type="radio" name="q3Answer" value="b"> b) array.push(element)<br>
+        <input type="radio" name="q3Answer" value="c"> c) array.addLast(element)<br>
+        <input type="radio" name="q3Answer" value="d"> d) array.append(element)<br>
+        <button type="button" onclick="showNextQuestion(4)">Submit</button>
+      </div>
+      <div id="question4" style="display: none;">
+        <p>4. What does the querySelector() method do in JavaScript?</p>
+        <input type="radio" name="q4Answer" value="a"> a) Returns the first element in the document that matches a specified CSS selector<br>
+        <input type="radio" name="q4Answer" value="b"> b) Queries the database<br>
+        <input type="radio" name="q4Answer" value="c"> c) Selects the entire document<br>
+        <input type="radio" name="q4Answer" value="d"> d) Returns all elements in the document that match a specified CSS selector<br>
+        <button type="button" onclick="showNextQuestion(5)">Submit</button>
+      </div>
+      <div id="question5" style="display: none;">
+        <p>5. What is the purpose of the setTimeout() function in JavaScript?</p>
+        <input type="radio" name="q5Answer" value="a"> a) Pauses the execution of a function for a specified number of milliseconds<br>
+        <input type="radio" name="q5Answer" value="b"> b) Executes a function after a specified number of milliseconds<br>
+        <input type="radio" name="q5Answer" value="c"> c) Returns the current timestamp<br>
+        <input type="radio" name="q5Answer" value="d"> d) Stops the execution of a function<br>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function showNextQuestion(nextQuestion) {
+      document.getElementById(`question${nextQuestion - 1}`).style.display = 'none';
+      document.getElementById(`question${nextQuestion}`).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
